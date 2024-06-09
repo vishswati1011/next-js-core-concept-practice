@@ -1,0 +1,11 @@
+.button_div{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.button{
+  margin: 5px 0 5px 5px;
+  width:150px;
+  height: 30px;
+}

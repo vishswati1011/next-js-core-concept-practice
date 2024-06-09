@@ -1,0 +1,26 @@
+
+.navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    margin-top:30px;
+
+}
+.navbar li {
+    margin-left: 100px;
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navbar li a:hover {
+    color: blue;
+}
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

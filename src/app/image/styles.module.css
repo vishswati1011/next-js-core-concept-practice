@@ -1,0 +1,15 @@
+.images_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images_form_input {
+    width:200px;
+    height: 40px;
+    align-items: center;
+    margin: 10px;
+}
+.images_form button {
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}

@@ -15,6 +15,9 @@ export default async function Product() {
   return (
     <div>
         <h1>Product Page with server component</h1>
+        <br/>
+        <h2>dummyjson api used to sow product details</h2>
+        <br/>
         {
             products && products?.map((product, index) => ( 
                 <h5 key={index}>

@@ -71,3 +71,20 @@ export default async function Product() {
 
 make a folder [...student]   in api folder and inside it a file routes.js
 and right api function in it
+
+
+# Next v/s React
+
+React 
+A JAva script library
+client side rendering of UI element
+Need to add routing and other package
+
+
+A React Js Framework
+Server side rendering of UI element
+Many package are already added in framework
+Routing 
+server side rendering
+middleware 
+

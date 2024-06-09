@@ -8,10 +8,25 @@ export default function Home() {
     <main>
     <h1> Home Page</h1>
     <div className={styles.button_div}>
-      <button className={styles.button}  onClick={()=>router.push('/login')}>Go to Login page</button>
-      <button className={styles.button} onClick={()=>router.push('/about')}>Go to about page</button>
-      <button className={styles.button} onClick={()=>router.push('/productlist')}>Go to Product page</button>
+      <button className={styles.button}  onClick={()=>router.push('/login')}>Login</button>
+      <button className={styles.button} onClick={()=>router.push('/about')}>about</button>
+      <button className={styles.button} onClick={()=>router.push('/productlist')}>Client component</button>
+      <button className={styles.button} onClick={()=>router.push('/addproduct')}>Add Product DB</button>
+   
+    </div>
+    <div className={styles.button_div}>
+      <button className={styles.button} onClick={()=>router.push('/products')}>Product page DB</button>
+      <button className={styles.button} onClick={()=>router.push('/product')}>server component</button>
+      <br/>
+      <button className={styles.button} onClick={()=>router.push('/user')}>generateStaticParams</button>
 
+      <button className={styles.button} onClick={()=>router.push('/users')}>User API Routes</button>
+
+    </div>
+
+    <div className={styles.button_div}>
+      <button className={styles.button} onClick={()=>router.push('/image')}>upload image</button>
+     
     </div>
     </main>
   );

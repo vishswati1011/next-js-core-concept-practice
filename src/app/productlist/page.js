@@ -18,6 +18,7 @@ export default function ProductList() {
 
   return (
     <div>
+      <h1>Product List show using dummy api in client side somponent</h1>
       <h1>Product List</h1>
  
         {products && products?.map((product, index) => ( 

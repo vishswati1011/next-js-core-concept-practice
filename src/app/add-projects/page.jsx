@@ -43,7 +43,7 @@ export default function AddProject() {
       formData.append('connect',inputValue.connect)
 
 
-      fetch(`${BASE_URL}projects`, {
+      fetch(`${BASE_URL}dbproject`, {
         method: 'POST',
         body: formData,
       })

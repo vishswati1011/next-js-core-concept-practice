@@ -4,15 +4,15 @@ import { connectionUrl } from "@/db/dbSetup";
 import  Project  from "@/db/model/project";
 import {writeFile} from 'fs/promises';
 
-export async function handler(req, res) {
-    if (req.method === 'GET') {
-        return await GET(req, res);
-    } else if (req.method === 'POST') {
-        return await POST(req, res);
-    } else {
-        res.status(405).send({ message: 'Method not allowed' });
-    }
-}
+// export async function handler(req, res) {
+//     if (req.method === 'GET') {
+//         return await GET(req, res);
+//     } else if (req.method === 'POST') {
+//         return await POST(req, res);
+//     } else {
+//         res.status(405).send({ message: 'Method not allowed' });
+//     }
+// }
 
 export async function GET(req, content) {
     let data = [];

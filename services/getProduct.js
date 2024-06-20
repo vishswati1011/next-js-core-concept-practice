@@ -1,4 +1,4 @@
-import { BASE_URL } from "../src/db/url";
+import  {BASE_URL}  from "../src/db/url";
 export default async function getProduct() {
   let response = await fetch(`${BASE_URL}/products`
     //   , {

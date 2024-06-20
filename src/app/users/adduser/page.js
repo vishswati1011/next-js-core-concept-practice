@@ -8,6 +8,7 @@ export default function AddUser() {
         email: '',
         age: ''
     })
+    
     const handleChange = (event) =>{
         setInputValue({
             ...inputValue,

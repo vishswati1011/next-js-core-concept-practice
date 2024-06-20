@@ -1,5 +1,6 @@
 'use client';
 import React from "react";
+import { BASE_URL } from "../../../db/url";
 
 export default function AddUser() {
     const [inputValue, setInputValue] = React.useState({
@@ -15,7 +16,7 @@ export default function AddUser() {
     }
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        let response =  await fetch('http://localhost:3000/api/users', {
+        let response =  await fetch(`${BASE_URL}users`, {
         
             method: 'POST',
             body: JSON.stringify(inputValue),

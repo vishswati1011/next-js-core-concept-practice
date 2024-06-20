@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    api: {
+        externalResolver: true,
+        runtime: "edge"
+    },
+};
 
 export default nextConfig;

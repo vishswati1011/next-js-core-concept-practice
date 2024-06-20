@@ -1,4 +1,5 @@
 'use client';
+import { BASE_URL } from '../../../db/url';
 import styles from './style.module.css';
 import React from 'react'
 
@@ -6,7 +7,7 @@ function deleteButton({productId}) {
 
 
     const handeleDelete = (e) => {
-        const result = fetch(`http://localhost:3000/api/products/${productId}`, {
+        const result = fetch(`${BASE_URL}products/${productId}`, {
             method: 'DELETE',
             headers:{
                 'Content-Type':'application/json'

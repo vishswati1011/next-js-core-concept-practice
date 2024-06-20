@@ -1,6 +1,7 @@
 "use client";
 import React , {useState,useEffect } from 'react';
 import styles from './addproduct.module.css';
+import { BASE_URL } from '../../../db/url';
 export default function Addproduct() {
 
     const [inputValue, setInputValue] = useState({
@@ -12,7 +13,7 @@ export default function Addproduct() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(inputValue);
-        fetch('http://localhost:3000/api/products',{
+        fetch(`${BASE_URL}products`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

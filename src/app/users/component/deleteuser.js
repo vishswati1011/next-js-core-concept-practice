@@ -1,11 +1,12 @@
 
 'use client';
 import React from 'react'
+import { BASE_URL } from '../../../db/url';
 
 export default function deleteuser({userId}) {
     console.log("deleteuser",userId)
     const handledelete = async () =>{
-        let response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+        let response = await fetch(`${BASE_URL}users/${userId}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json'

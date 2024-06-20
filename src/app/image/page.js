@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import styles from './styles.module.css';
+import { BASE_URL } from '../../db/url';
 export default function Image() {
 
     const [file, setFile] = React.useState(null);
@@ -9,7 +10,7 @@ export default function Image() {
         e.preventDefault();
         const formData = new FormData();
         formData.append('image',file);
-        const response = await fetch('http://localhost:3000/api/image',{
+        const response = await fetch(`${BASE_URL}image`,{
             method:'POST',
             body:formData
         })

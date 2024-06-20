@@ -1,5 +1,6 @@
+import { BASE_URL } from "../db/url";
 export default async function getProduct() {
-  let response = await fetch("http://localhost:3000/api/products"
+  let response = await fetch(`${BASE_URL}/products`
     //   , {
     //     cache: "no-store",
     //     next: { revalidate: 3600 },

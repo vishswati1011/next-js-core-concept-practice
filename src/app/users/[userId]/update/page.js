@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from "react";
 import {getUsersByIdApiRoutes} from '../../../../../services/getUsersByApiRoutes'
+import { BASE_URL } from "../../../../db/url";
 export default function EditUser({params}) {
 
     let id = params.userId;
@@ -31,7 +32,7 @@ export default function EditUser({params}) {
     
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        let response =  await fetch(`http://localhost:3000/api/users/${id}`, {
+        let response =  await fetch(`${BASE_URL}users/${id}`, {
         
             method: 'PUT',
             body: JSON.stringify(inputValue),

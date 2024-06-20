@@ -2,6 +2,7 @@
 import React , {useState,useEffect } from 'react';
 import styles from '../addproduct/addproduct.module.css';
 import {useRouter} from 'next/navigation';
+import { BASE_URL } from '../../../db/url';
 export default function UpdateProduct({params}) {
 
     const router = useRouter();
@@ -13,7 +14,7 @@ export default function UpdateProduct({params}) {
     });
     useEffect (()=>{
         async function fetchData(){
-            const response = await fetch(`http://localhost:3000/api/products/${params?.productId}`);
+            const response = await fetch(`${BASE_URL}products/${params?.productId}`);
             const data = await response.json();
             setInputValue({
                 name:data.result.name,
@@ -28,7 +29,7 @@ export default function UpdateProduct({params}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(inputValue);
-        fetch(`http://localhost:3000/api/products/${params.productId}`,{
+        fetch(`${BASE_URL}products/${params.productId}`,{
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'

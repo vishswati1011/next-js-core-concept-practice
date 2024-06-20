@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./addproject.module.css";
 import {postProjectData} from "../../../services/projects"
-import BASE_URL from "@/db/url"
+import {BASE_URL} from "@/db/url"
 export default function AddProject() {
   
   const [inputValue, setInputValue] = useState({
